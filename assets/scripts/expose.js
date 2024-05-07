@@ -27,31 +27,31 @@ function init() {
 
   hornSelect.addEventListener('change', function() {
     if (this.value == "air-horn") {
-      hornImage.src = "CSE110_Lab5/assets/images/air-horn.svg";
-      audio.src = "CSE110_Lab5/assets/audio/air-horn.mp3";
+      hornImage.src = "assets/images/air-horn.svg";
+      audio.src = "assets/audio/air-horn.mp3";
     }
     else if (this.value == "car-horn") {
-      hornImage.src = "CSE110_Lab5/assets/images/car-horn.svg";
-      audio.src = "CSE110_Lab5/assets/audio/car-horn.mp3";
+      hornImage.src = "assets/images/car-horn.svg";
+      audio.src = "assets/audio/car-horn.mp3";
     }
     else {
-      hornImage.src = "CSE110_Lab5/assets/images/party-horn.svg";
-      audio.src = "CSE110_Lab5/assets/audio/party-horn.mp3";
+      hornImage.src = "assets/images/party-horn.svg";
+      audio.src = "assets/audio/party-horn.mp3";
     }
   })
 
   volumeSlider.addEventListener('input', function() {
     if (volumeSlider.value == 0) {
-      volumeImage.src = "CSE110_Lab5/assets/icons/volume-level-0.svg";
+      volumeImage.src = "assets/icons/volume-level-0.svg";
     }
     else if (volumeSlider.value < 33) {
-      volumeImage.src = "CSE110_Lab5/assets/icons/volume-level-1.svg";
+      volumeImage.src = "assets/icons/volume-level-1.svg";
     }
     else if (volumeSlider.value < 66) {
-      volumeImage.src = "CSE110_Lab5/assets/icons/volume-level-2.svg";
+      volumeImage.src = "assets/icons/volume-level-2.svg";
     }
     else {
-      volumeImage.src = "CSE110_Lab5/assets/icons/volume-level-3.svg";
+      volumeImage.src = "assets/icons/volume-level-3.svg";
     }
     audio.volume = volumeSlider.value/100;
   }) 
