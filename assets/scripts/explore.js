@@ -3,15 +3,14 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-  // TODO
-  
+
   const synth = window.speechSynthesis;
   const smilingFace = document.querySelector("img");
   const voiceSelect = document.querySelector("#voice-select");
   const textArea = document.querySelector("textarea");
   const playButton = document.querySelector("button");
 
-  // Generate voices
+  // Generate voicelist
   let voices = [];
 
   synth.onvoiceschanged = function() {
@@ -52,5 +51,7 @@ function init() {
       };
 
     }
+
   }) 
+
 }
